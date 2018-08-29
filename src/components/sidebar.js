@@ -12,8 +12,8 @@ class Sidebar extends Component {
         return (
             <div id="sidebar-wrapper">
                 <div className="list-unstyled">
-                    <NavLink exact to="/" className="list-group-item list-group-item-action"><FontAwesomeIcon icon="cogs" /> Task 1 <FontAwesomeIcon icon="caret-left" className="pointing" size="2x" /></NavLink>
-                    <NavLink exact to="/task_draggable" className="list-group-item list-group-item-action"><FontAwesomeIcon icon="list" /> Task 2 <FontAwesomeIcon icon="caret-left" className="pointing" size="2x" /></NavLink>
+                    <NavLink exact to="/" className="list-group-item list-group-item-action"><FontAwesomeIcon icon="clone" /> Task 1 <FontAwesomeIcon icon="caret-left" className="pointing" size="2x" /></NavLink>
+                    <NavLink exact to="/task_draggable" className="list-group-item list-group-item-action"><FontAwesomeIcon icon="hand-pointer" /> Task 2 <FontAwesomeIcon icon="caret-left" className="pointing" size="2x" /></NavLink>
                 </div>
             </div>
         );

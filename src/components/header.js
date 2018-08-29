@@ -11,10 +11,7 @@ class Header extends Component {
             isOpen: false
         };
     }
-    logout() {
-        cookie.remove('session', { path: '/' });
-        window.location.href = '/';
-    }
+    
     render() {
         return (
             <nav className="navbar navbar-expand-lg navbar-light headerShadow fixed-top bg-light">
@@ -31,12 +28,12 @@ class Header extends Component {
                     </ul>
                     <ul className="nav justify-content-end">
                         <li className="nav-item dropdown">
-                            <button className="btn btn-trell btn-sm nav-link dropdown-toggle text-white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button className="btn btn-trell btn-sm text-white">
                                 <FontAwesomeIcon icon="user-circle" />  John Doe
                             </button>
-                            <div className="dropdown-menu dropdown-menu-right">
+                            {/* <div className="dropdown-menu dropdown-menu-right">
                                 <a className="dropdown-item" href="javascript:void(0)" onClick={this.logout}>Sign Out</a>
-                            </div>
+                            </div> */}
                         </li>
                     </ul>
                 </div>

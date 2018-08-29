@@ -1,12 +1,23 @@
-#slider {
-    height: 50%;
-    width: 100%;    
-    overflow: hidden;
+#slider {       
+    overflow: hidden;    
+    background-color: grey;    
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%
+}
+
+figure {
+    height: 440px !important;
 }
 
 #slider figure img {
+    object-fit: cover;
     width: 20%;
+    height: auto;
     float: left;
+    padding-right: 40px;
 }
 
 #slider figure {
@@ -22,24 +33,24 @@
         left: 0%;
     }
     20% {
-        left: 0%;
+        left: -110%;        
     }
-    25% {
-        left: -100%;
+    40% {
+        left: -220%;
     }
-    45% {
-        left: -100%;
+    60% {
+        left: -310%;
     }
-    50% {
-        left: -200%;
+    80% {
+        left: -420%;
     }
-    75% {
-        left: -300%;
+    100% {
+        left: -510%;
     }
-    95% {
+    /* 95% {
         left: -300%;
     }
     100% {
         left: -400%;
-    }
+    } */
 }

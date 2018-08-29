@@ -11,7 +11,8 @@ class TaskDraggable extends Component {
         this.state = {
             dataSource: [],
             list: [],
-            logs: []
+            logs: [],
+            toggelMessage: false
         };
     }
 
@@ -32,6 +33,7 @@ class TaskDraggable extends Component {
     }
 
     onSort(sortedList, dropEvent) {
+        this.setState({ toggelMessage: true })
         let logConsole = []
         if (logConsole.length == 0) {
             this.setState((prevState, props) => {
@@ -83,6 +85,9 @@ class TaskDraggable extends Component {
                             placeholder={placeholder}
                             type="grid"
                         />
+                    </div>
+                    <div className='text-center col-md-12'>
+                        {this.state.toggelMessage == true ? <p className='text-muted font-weight-bold'>Press f12 to see the log of images in the console </p> : null}
                     </div>
                 </div>
             </div>
