@@ -15,20 +15,14 @@ class Slideshow extends Component {
                         <h2>Slideshow</h2>
                     </div>
                     <div className='col-md-12'>
-                        <div className="slider-holder">
-                            <span id="slider-image-1"></span>
-                            <span id="slider-image-2"></span>
-                            <span id="slider-image-3"></span>
-                            <div className="image-holder">
-                                <img src="/src/assets/img/carouselImage1.jpg" className="slider-image" />
-                                <img src="/src/assets/img/carouselImage2.jpg" className="slider-image" />
-                                <img src="/src/assets/img/carouselImage3.jpg" className="slider-image" />
-                            </div>
-                            <div className="button-holder">
-                                <a href="#slider-image-1" className="slider-change"></a>
-                                <a href="#slider-image-2" className="slider-change"></a>
-                                <a href="#slider-image-3" className="slider-change"></a>
-                            </div>
+                        <div id='slider'>
+                            <figure>
+                                <img src='http://www.portoalegre.travel/upload/b/55/554334_twitter-header-wallpaper.jpg'  className='img-fluid' />
+                                <img src='https://wallpapersite.com/images/wallpapers/thelma-louise-2880x1800-minimal-pair-girls-5k-10399.jpg' className='img-fluid' />
+                                <img src='http://www.portoalegre.travel/upload/b/55/554334_twitter-header-wallpaper.jpg' className='img-fluid' />
+                                <img src='https://wallpapersite.com/images/wallpapers/military-helicopters-3840x2160-silhouette-sunset-artwork-minimal-5k-12483.jpg' className='img-fluid' />
+                                <img src='https://img00.deviantart.net/dae2/i/2016/069/3/4/x_wing_wallpaper_by_theadamtaylor-d9ulfk2.png' className='img-fluid' />
+                            </figure>
                         </div>
                     </div>
                 </div>
