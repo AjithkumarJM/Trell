@@ -13,7 +13,7 @@ import solid from '@fortawesome/fontawesome-free-solid';
 import 'rxjs';
 import $ from 'jquery';
 import 'bootstrap';
-
+import "react-alice-carousel/lib/alice-carousel.css";
 import './assets/css/bootstrap.min.css';
 import './assets/css/style.css';
 import './assets/css/imageSlider.css';

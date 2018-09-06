@@ -25,6 +25,7 @@
     "query-string": "^4.3.4",
     "react": "^16.2.0",
     "react-addons-css-transition-group": "^15.6.2",
+    "react-alice-carousel": "^1.10.4",
     "react-bootstrap-table2-paginator": "^0.1.1",
     "react-cookies": "0.0.1",
     "react-dom": "^16.2.0",
