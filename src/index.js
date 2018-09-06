@@ -18,8 +18,8 @@ import './assets/css/bootstrap.min.css';
 import './assets/css/style.css';
 import './assets/css/imageSlider.css';
 import './assets/js/popper.min.js';
+import './assets/css/trailStyling.css'
 import 'botframework-webchat/botchat.css';
-
 
 fontawesome.library.add(solid)
 

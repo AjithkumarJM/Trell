@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import AliceCarousel from 'react-alice-carousel';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import axios from 'axios';
+import TrailSlide from './trailSlide'
 
 class FinalTask extends Component {
   constructor(props) {
@@ -14,20 +15,10 @@ class FinalTask extends Component {
 
   componentDidMount() {
     // using AXIOS library for doing AJAX call
-    axios.get('https://trell.co/third-party/tasks/trail.json').then((response) => {
-      this.setState({ trailSource: response.data.data })
-    })
-  }
-
-  onSlideChange(e) {
-    console.log('Item`s position during a change: ', e.item);
-    console.log('Slide`s position during a change: ', e.slide);
-  };
-
-  onSlideChanged(e) {
-    console.log('Item`s position after changes: ', e.item);
-    console.log('Slide`s position after changes: ', e.slide);
-  };
+    // axios.get('https://trell.co/third-party/tasks/trail.json').then((response) => {
+    //   this.setState({ trailSource: response.data.data })
+    // })
+  }  
 
   renderThumbnails() {
     return (
@@ -50,28 +41,13 @@ class FinalTask extends Component {
   }
 
   render() {
-    console.log(this.state.trailSource)
-    let items = [1, 2, 3, 4, 5].map((item, i) => {
-      return <div key={`key-${i}`} className="yours-custom-class"><h2>{item}</h2></div>
-    })
 
     return (
       <div className='container-fluid'>
         <div className="row">
           <div className='row col-12 taskTrail'>
             <div className="col-md-8">
-              <AliceCarousel
-                items={items}
-                fadeOutAnimation={true}
-                onSlideChange={this.onSlideChange}
-                onSlideChanged={this.onSlideChanged}
-              >
-                <img src="https://static2.srcdn.com/wordpress/wp-content/uploads/2018/04/Bucky-Barnes-MCU-Captain-America-shield.jpg" className="yours-custom-class" />
-                <img src="https://images.indianexpress.com/2018/09/teachers-day-bill-gates_759.jpg" className="yours-custom-class" />
-                <img src="https://images.indianexpress.com/2018/09/teachers-day-bill-gates_759.jpg" className="yours-custom-class" />
-                <img src="https://images.indianexpress.com/2018/09/teachers-day-bill-gates_759.jpg" className="yours-custom-class" />
-                <img src="https://images.indianexpress.com/2018/09/teachers-day-bill-gates_759.jpg" className="yours-custom-class" />
-              </AliceCarousel >
+              <TrailSlide />
             </div>
             <div className="col-md-4">
               <ul className="list-unstyled">
@@ -109,4 +85,3 @@ export default connect(
   null,
   {}
 )(FinalTask);
-	
