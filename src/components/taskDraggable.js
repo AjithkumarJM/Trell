@@ -64,7 +64,7 @@ class TaskDraggable extends Component {
         let listArray;
         this.state.dataSource.map((data, index) => {
             listArray = { content: <div className='marginWrap'> <img src={data.image} height='120' width='140' /></div> }
-            this.state.list.length <= 11 ? this.state.list.push(listArray) : null
+            this.state.list.length <= 11 ? this.state.list.push(listArray) : null;
         })
 
         let placeholder = (
