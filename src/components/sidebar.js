@@ -16,7 +16,7 @@ class Sidebar extends Component {
             to="/"
             className="list-group-item list-group-item-action"
           >
-            <FontAwesomeIcon icon="clone" /> Final Task{" "}
+            <FontAwesomeIcon icon="tasks" /> Final Task{" "}
             <FontAwesomeIcon icon="caret-left" className="pointing" size="2x" />
           </NavLink>
           <NavLink

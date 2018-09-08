@@ -5,19 +5,12 @@
   }
 
 .mySlides {
-    display: none
+    /* display: none; */
 }
 
-.mySlides>.text-center>img {
-    margin: 11px !important;
+.imageOverlay>img {    
     object-fit: cover;
-}
-
-/* Slideshow container */
-
-.slideshow-container {
-    max-width: 1000px;
-    margin: auto;
+    width :100%;
 }
 
 /* Next & previous buttons */
@@ -45,12 +38,15 @@
 
 /* Caption text */
 
-.text {
-    background: #2e2e30;
-    opacity: 0.5;
+.text {    
     position: absolute;
-    top: 80%;
-    width: 100%
+    bottom: 1.5%;
+    right: 1%;
+    left: 1%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    opacity: 0.8;
 }
 
 .insideText {
@@ -73,7 +69,7 @@
     content: "";
     position: absolute;
     left: 47%;
-    top: 6%;
+    top: 80%;
     width: 6%;
     height: 2px;
     background-color: grey;
@@ -115,3 +111,208 @@
         font-size: 11px
     }
 }
+
+/* custom */
+.next > i {
+    color: lightgray;
+}
+
+.prev > i {
+    color: lightgray;
+}
+
+.imageOverlay{
+    position: relative;
+}
+
+.morecontent >a {
+	color: lightgray;
+}
+.morecontent>a:visited {
+	color: lightgray;
+}
+a.morelink {
+	text-decoration:none;
+	outline: none;
+}
+.morecontent span {
+	display: none;
+}
+
+.mySlides > .row > .col-sm-10 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.infoImageoverlay>img {    
+    object-fit: cover;
+    width :100%;
+}
+
+.infoImageoverlay {
+    position: relative;
+}
+
+.infoOverlayText {
+    position: absolute;
+    bottom: 0%;
+    color: white;
+    width: 100.2%;
+    height: 71%;
+    background: linear-gradient(0deg,rgb(129, 123, 55) 53%,rgba(47, 17, 17, 0));
+    background-size: cover;
+}
+
+.infoOverlayText > h4 {
+    margin-top: 27%;
+    padding: 0px 26px;
+}
+
+.infoOverlayText > p {
+    padding: 0px 26px;
+    margin-top: 3%;
+}
+
+.infoOverlayText > div {
+    padding: 0px 26px;
+    margin-top: 3%;
+}
+
+.infoOverlayText > div > p > span {
+    margin: -4.5% 0%;
+}
+
+.dot {
+    height: 6px;
+    width: 6px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.big-dot {
+    height: 50px;
+    width: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.finalImgOverlay  {
+    position: absolute;
+    bottom: 0%;
+    color: white;
+    width: 100.2%;
+    height: 89%;
+    background: linear-gradient(0deg,rgb(129, 123, 55) 30%,rgba(47, 17, 17, 0));
+    background-size: cover;
+}
+
+.finalImgOverlay >div>div>svg {
+    margin: 26% 0%;
+}
+
+.finalImgOverlay> div {
+    margin: -6% 0%;
+}
+
+.finalImgOverlay > div > div{
+    margin-top: 20px;
+}
+
+.finalImgOverlay > div >div >div> i  {
+    margin-right: 30px;
+}
+
+.col >.big-dot>svg {
+    margin: 16% 0%;
+}
+
+.col >.big-dot {
+    height: 35px !important;
+    width: 34px !important;
+}
+
+.detailsText {
+    position: absolute;
+    bottom: 91%;
+    /* right: 0%; */
+    left: 2%;
+    color: white;
+    opacity: 0.7;
+}
+
+.locationInfo {
+    background-color: black;
+    padding: 7px;
+}
+
+.saveText {
+    position: absolute;
+    bottom: 91%;
+    /* right: 79%; */
+    left: 74%;
+    color: white;    
+}
+
+.saveText:hover {
+    cursor: pointer;
+}
+
+.detailsText:hover {
+    cursor: pointer;
+}
+
+.suggestedSlide {
+    position: relative;
+}
+
+.suggestedSlide>img {
+    object-fit: cover;
+    width :86%;
+}
+
+.suggestedSlideOverlay{
+    position: absolute;
+    bottom: 0%;
+    color: white;
+    width: 86.2%;
+    height: 45%;
+    background: linear-gradient(0deg,rgb(85, 158, 210) 49%,rgba(47, 17, 17, 0));
+    background-size: cover;
+}
+
+.suggestedSlideOverlay > small {    
+    padding: 0px 6%;
+}
+
+.suggestedSlideOverlay2{
+    position: absolute;
+    bottom: 0%;
+    color: white;
+    width: 86.2%;
+    height: 45%;
+    background: linear-gradient(0deg,rgb(79, 93, 12) 49%,rgba(47, 17, 17, 0));
+    background-size: cover;
+}
+
+.suggestedSlideOverlay2 > small {    
+    padding: 0px 6%;
+}
+
+.suggestedSlideOverlay3{
+    position: absolute;
+    bottom: 0%;
+    color: white;
+    width: 86.2%;
+    height: 45%;
+    background: linear-gradient(0deg,rgb(211, 163, 126) 49%,rgba(47, 17, 17, 0));
+    background-size: cover;
+}
+
+.suggestedSlideOverlay3 > small {    
+    padding: 0px 6%;
+}
+
+
